@@ -19,6 +19,6 @@ for i in 00; do
     for j in "${!cycles[@]}"; do
         (cd ${today}-patterns/sequencing  && ln -s ../../original/${cycles[j]}_tile${i}.tif tile${i}_c${j}.tif)
     done
-    echo "tile${i}_c<0-15>.tif" > ${today}-patterns/sequencing/tile${i}.pattern
+    echo "tile${i}_c<0-14>.tif" > ${today}-patterns/sequencing/tile${i}.pattern
 done
 
