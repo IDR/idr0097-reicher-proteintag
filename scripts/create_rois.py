@@ -6,7 +6,7 @@ import omero
 from omero.cli import cli_login
 from omero.gateway import BlitzGateway
 from omero.model import PointI, RoiI, ImageI
-from omero.rtypes import rdouble, rint
+from omero.rtypes import rdouble, rint, rstring
 
 import sys
 
