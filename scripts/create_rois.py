@@ -23,10 +23,10 @@ def create_points(conn, f, imageid):
         p = omero.model.PointI()
         p.x = rdouble(i)
         p.y = rdouble(j)
+        p.setTextValue(rstring(k))
         roi = omero.model.RoiI()    
         roi.addShape(p)
         roi.setImage(omero.model.ImageI(imageid, False))
-        roi.setTextValue(rstring(k))
         conn.getUpdateService().saveAndReturnObject(roi)
 
 
