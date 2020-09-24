@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+import argparse
 import pandas
 import omero
 from omero.cli import cli_login
