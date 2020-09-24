@@ -7,6 +7,7 @@ from omero.gateway import BlitzGateway
 from omero.model import PointI, RoiI, ImageI
 from omero.rtypes import rdouble, rint
 
+import sys
 
 def create_points(conn, f, imageid):
 
@@ -43,3 +44,6 @@ def main(argv):
     with omero.cli.cli_login() as c:
         conn = omero.gateway.BlitzGateway(client_obj=c.get_client())
         create_points(conn, args.file, args.imageid)
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
