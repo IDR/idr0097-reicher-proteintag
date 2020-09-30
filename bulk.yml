@@ -1,7 +1,6 @@
 ---
 continue: "true"
 transfer: "ln_s"
-exclude: "clientpath"
 skip:
   - checksum
   - minmax
