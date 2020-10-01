@@ -5,6 +5,3 @@ skip:
   - checksum
   - minmax
 parallel_upload: "10"
-columns:
-  - path
-
