@@ -1,7 +1,6 @@
 ---
-target: "Screen:name:idr0097-reicher-proteintag/screenA"
 include: "../bulk.yml"
-path: "idr0097-screenA-plates.tsv"
+path: "idr0097-experimentB-filePaths.tsv"
 columns:
   - target
   - path
