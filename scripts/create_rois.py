@@ -10,10 +10,15 @@ from omero.rtypes import rdouble, rint, rstring
 
 import sys
 
-def create_points(conn, f, imageid):
+PROCESSED_FILE_PATH =  (
+    "/uod/idr/filesets/idr0097-reicher-proteintag/20200929-ftp/"
+    "experimentB-processed.txt")
 
-    img = conn.getObject('Image', imageid)
-    name = img.getName()
+
+def create_points(conn, df, image):
+
+    name = image.getName()
+    iid = image.getId()
     df = pandas.read_csv(f, delimiter='\t')
     x = [float(x) for x in df[df['Source Name'] == name]['Location_X']]
     y = [float(x) for x in df[df['Source Name'] == name]['Location_Y']]
@@ -26,14 +31,22 @@ def create_points(conn, f, imageid):
         p.setTextValue(rstring(k))
         roi = omero.model.RoiI()    
         roi.addShape(p)
-        roi.setImage(omero.model.ImageI(imageid, False))
+        roi.setImage(omero.model.ImageI(iid, False))
         conn.getUpdateService().saveAndReturnObject(roi)
+
+
+def get_timelapse_images(conn):
+    project = conn.getObject(
+        'Project', attributes={
+            'name': 'idr0097-reicher-proteintag/experimentB'})
+    datasets = project.listChildren()
+    for dataset in datasets:
+        if dataset.getName() == 'timelapse':
+            return dataset.listChildren()
 
 
 def main(argv):
     parser = argparse.ArgumentParser()
-    parser.add_argument('file', type=str)
-    parser.add_argument('imageid', type=int)
     parser.add_argument(
         '--verbose', '-v', action='count', default=0,
         help='Increase the command verbosity')
@@ -42,9 +55,12 @@ def main(argv):
         help='Decrease the command verbosity')
     args = parser.parse_args(argv)
 
+    df = pandas.read_csv(PROCESSED_FILE_PATH, delimiter='\t')
     with omero.cli.cli_login() as c:
         conn = omero.gateway.BlitzGateway(client_obj=c.get_client())
-        create_points(conn, args.file, args.imageid)
+        images = get_timelapse_images(conn)
+        for image in images:
+            create_points(conn, df, image)
 
 if __name__ == "__main__":
     main(sys.argv[1:])
