@@ -1,0 +1,12 @@
+---
+channels:
+    1:
+        active: true
+        color: 00FF00
+        end: 2000.0
+        label: 'GFP'
+        start: 0.0
+greyscale: false
+t: 1
+version: 2
+z: 1

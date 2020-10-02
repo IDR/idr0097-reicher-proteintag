@@ -1,0 +1,96 @@
+---
+channels:
+    1:
+        active: true
+        color: FF0000
+        end: 5000.0
+        label: 'Cycle 1 - AC'
+        start: 500.0
+    2:
+        active: true
+        color: FFFF00
+        end: 5000.0
+        label: 'Cycle 1 - AT'
+        start: 500.0
+    3:
+        active: false
+        color: FF0000
+        end: 5000.0
+        label: 'Cycle 2 - AC'
+        start: 200.0
+    4:
+        active: false
+        color: FFFF00
+        end: 5000.0
+        label: 'Cycle 2 - AT'
+        start: 200.0
+    5:
+        active: false
+        color: FF0000
+        end: 65535.0
+        label: 'Cycle 3 - AC'
+        start: 0.0
+    6:
+        active: false
+        color: FFFF00
+        end: 65535.0
+        label: 'Cycle 3 - AT'
+        start: 0.0
+    7:
+        active: false
+        color: FF0000
+        end: 65535.0
+        label: 'Cycle 4 - AC'
+        start: 0.0
+    8:
+        active: false
+        color: FFFF00
+        end: 65535.0
+        label: 'Cycle 4 - AT'
+        start: 0.0
+    9:
+        active: false
+        color: FF0000
+        end: 65535.0
+        label: 'Cycle 5 - AC'
+        start: 0.0
+    10:
+        active: false
+        color: FFFF00
+        end: 65535.0
+        label: 'Cycle 5 - AT'
+        start: 0.0
+    11:
+        active: false
+        color: FF0000
+        end: 65535.0
+        label: 'Cycle 6 - AC'
+        start: 0.0
+    12:
+        active: false
+        color: FFFF00
+        end: 65535.0
+        label: 'Cycle 6 - AT'
+        start: 0.0
+    13:
+        active: false
+        color: FF0000
+        end: 65535.0
+        label: 'Cycle 7 - AC'
+        start: 0.0
+    14:
+        active: false
+        color: FFFF00
+        end: 65535.0
+        label: 'Cycle 7 - AT'
+        start: 0.0
+    15:
+        active: true
+        color: 0000FF
+        end: 2865.0
+        label: 'DAPI'
+        start: 0.0
+greyscale: false
+t: 1
+version: 2
+z: 1
