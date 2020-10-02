@@ -19,7 +19,6 @@ def create_points(conn, df, image):
 
     name = image.getName()
     iid = image.getId()
-    df = pandas.read_csv(f, delimiter='\t')
     x = [float(x) for x in df[df['Source Name'] == name]['Location_X']]
     y = [float(x) for x in df[df['Source Name'] == name]['Location_Y']]
     text = list(df[df['Source Name'] == name]['Tagged Protein'])
