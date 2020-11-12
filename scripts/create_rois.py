@@ -25,7 +25,7 @@ def create_points(conn, df, image):
     ]
     df2 = pandas.DataFrame(columns=(['roi'] + columns))
     index = df['Source Name'] == image.getName()
-    for s, tp, u, x, y in zip(map(lambda x: df[index][x], columns)):
+    for (s, tp, u, x, y) in zip(*map(lambda x: df[index][x], columns)):
         p = PointI()
         p.x = rdouble(float(x))
         p.y = rdouble(float(y))
@@ -65,8 +65,8 @@ def main(argv):
         images = get_timelapse_images(conn)
         for image in images:
             df2 = create_points(conn, df, image)
-            iid = image.getId().getValue()
-            df2.to_csv(f"{iid}.csv")
+            iid = image.getId()
+            df2.to_csv(f"{iid}.csv", index=False)
 
 
 if __name__ == "__main__":
