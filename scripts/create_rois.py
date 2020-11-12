@@ -23,7 +23,7 @@ def create_points(conn, df, image):
         "Location_X",
         "Location_Y"
     ]
-    df2 = pandas.DataFrame(columns=(['roi'] + columns))
+    df2 = pandas.DataFrame(columns=(['Roi'] + columns))
     index = df['Source Name'] == image.getName()
     for (s, tp, u, x, y) in zip(*map(lambda x: df[index][x], columns)):
         p = PointI()
