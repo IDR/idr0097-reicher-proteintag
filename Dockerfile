@@ -7,7 +7,8 @@ RUN wget https://github.com/glencoesoftware/raw2ometiff/releases/download/v0.2.8
 RUN mv bioformats2raw-0.2.5 /opt/bioformats2raw
 RUN mv raw2ometiff-0.2.8 /opt/raw2ometiff
 
-ADD scripts/convert_patterns.sh /usr/local/bin/
 
 USER 1000
-ENTRYPOINT ["/usr/local/bin/convert_patterns.sh"]
+ADD scripts/convert_experimentB_patterns.sh .
+ADD scripts/convert_experimentC_patterns.sh .
+ENTRYPOINT ["/bin/bash"]
