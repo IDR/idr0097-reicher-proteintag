@@ -1,7 +1,0 @@
----
-target: "Screen:name:idr0097-reicher-proteintag/screenC"
-include: "../bulk.yml"
-path: "idr0097-screenC-plates.tsv"
-columns:
-  - path
-  - name
