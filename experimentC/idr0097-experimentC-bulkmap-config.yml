@@ -1,0 +1,74 @@
+---
+name: idr0097-reicher-proteintag/experimentC
+version: 1
+
+defaults:
+  include: no
+  type: string
+  includeclient: yes
+  visible: yes
+  omitempty: yes
+
+columns:
+
+  - name: Growth Protocol
+    clientname: Growth Protocol
+    include: yes
+
+  - name: Treatment Protocol
+    clientname: Treatment Protocol
+    include: yes
+
+  - name: Image Acquisition and Feature Extraction Protocol
+    clientname: Image Acquisition and Feature Extraction Protocol
+    include: yes
+
+  - name: Image Description
+    clientname: Image Description
+    include: yes
+
+  - name: Assay Name
+    clientname: Assay Name
+    include: yes
+
+  - name: Source Name
+    clientname: Source Name
+    include: yes
+
+  - name: Comment [Image File Type]
+    clientname: Image File Type Comment
+    include: yes
+
+  - name: Channels
+    clientname: Channels
+    include: yes
+
+
+  ######################################################################
+  # mapr groups
+  ######################################################################
+
+  - group:
+      namespace: openmicroscopy.org/mapr/organism
+      columns:
+        - name: Characteristics [Organism]
+          clientname: Organism
+          include: yes
+
+  - group:
+      namespace: openmicroscopy.org/mapr/cell_line
+      columns:
+        - name: Characteristics [Cell Line]
+          clientname: Cell Line
+          include: true
+
+
+advanced:
+  ignore_missing_primary_key: yes
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
+    - namespace: openmicroscopy.org/mapr/cell_line
+      keys:
+        - Cell Line
