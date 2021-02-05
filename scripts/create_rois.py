@@ -45,7 +45,7 @@ def get_timelapse_images(conn):
             'name': 'idr0097-reicher-proteintag/experimentB'})
     datasets = project.listChildren()
     for dataset in datasets:
-        if dataset.getName() == 'timelapse':
+        if dataset.getName() == 'Time-lapse':
             return dataset.listChildren()
 
 
