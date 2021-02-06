@@ -1,0 +1,30 @@
+---
+channels:
+    1:
+        active: true
+        color: 00FF00
+        end: 7500.0
+        label: 'GFP'
+        max: 65535.0
+        min: 0.0
+        start: 0.0
+    2:
+        active: true
+        color: FFFF00
+        end: 7500.0
+        label: 'AT'
+        max: 65535.0
+        min: 0.0
+        start: 0.0
+    3:
+        active: true
+        color: FF0000
+        end: 1500.0
+        label: 'AC'
+        max: 65535.0
+        min: 0.0
+        start: 0.0
+greyscale: false
+t: 1
+version: 2
+z: 1
