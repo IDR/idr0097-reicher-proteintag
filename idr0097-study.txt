@@ -21,7 +21,8 @@ Study Organism	Homo sapiens
 Study Organism Term Source REF	NCBITaxon								
 Study Organism Term Accession	9606
 								
-Study Experiments Number	3	
+Study Experiments Number	2	
+Study Screens Number	1	
 							
 Study External URL	
 
