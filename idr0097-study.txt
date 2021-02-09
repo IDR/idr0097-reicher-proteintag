@@ -1,0 +1,296 @@
+# FILL IN AS MUCH INFORMATION AS YOU CAN.  HINTS HAVE BEEN PUT IN SOME FIELDS AFTER THE HASH # SYMBOL. REPLACE THE HINT WITH TEXT WHERE APPROPRIATE.									
+									
+# STUDY DESCRIPTION SECTION									
+# Section with generic information about the study including title, description, publication details (if applicable) and contact details									
+									
+Comment[IDR Study Accession]	idr0097
+								
+Study Title	Pooled protein tagging, cellular imaging and in situ sequencing for monitoring drug action in real time		
+						
+Study Type	in situ sequencing
+								
+Study Type Term Source REF	EFO
+								
+Study Type Term Accession	EFO_0008989		
+								
+Study Description	The levels and subcellular localizations of proteins regulate critical aspects of many cellular processes and can become targets of therapeutic intervention. However, high-throughput methods for unbiased discovery of proteins that change localization either by shuttling between compartments, by binding larger complexes or by localizing to distinct membraneless organelles are not available. Here we describe a scalable strategy to characterize effects on protein localizations and levels in response to different perturbations. We use CRISPR-Cas9 based intron tagging to generate cell pools expressing hundreds of GFP-fusion proteins from their endogenous promoters and monitor localization changes by time-lapse microscopy followed by clone identification using in situ sequencing. We show that this strategy can characterize cellular responses to drug treatment and thus identify non-classical effects such as modulation of protein-protein interactions, condensate formation and chemical degradation.
+							
+Study Key Words	pooled protein tagging	subcellular protein localization	in situ sequencing								
+Study Organism	Homo sapiens	
+							
+Study Organism Term Source REF	NCBITaxon								
+Study Organism Term Accession	9606
+								
+Study Experiments Number	3	
+							
+Study External URL	
+
+Study BioImage Archive Accession
+								
+Study Public Release Date	2021-02-11
+							
+									
+# Study Publication	
+								
+Study PubMed ID	33203764	
+							
+Study Publication Title	Pooled protein tagging, cellular imaging, and in situ sequencing for monitoring drug action in real time	
+							
+Study Author List	Reicher A, Koren A, Kubicek S							
+Study PMC ID	PMC7706735		
+							
+Study DOI	https://doi.org/10.1101/gr.261503.120								
+									
+# Study Contacts		
+							
+Study Person Last Name	Reicher	Kubicek	
+						
+Study Person First Name	Andreas	Stefan	
+						
+Study Person Email	areicher@cemm.oeaw.ac.at	skubicek@cemm.oeaw.ac.at							
+Study Person Address	CeMM Research Center for Molecular Medicine, Lazarettgasse 14, AKH BT 25.3, 1090 Vienna, Austria	CeMM Research Center for Molecular Medicine, Lazarettgasse 14, AKH BT 25.3, 1090 Vienna, Austria							
+Study Person ORCID		https://orcid.org/0000-0003-0855-8343							
+Study Person Roles	submitter	principal investigator							
+									
+# Study License and Data DOI		
+							
+Study License	CC BY 4.0	
+							
+Study License URL	https://creativecommons.org/licenses/by/4.0/								
+Study Copyright	Reicher et al		
+						
+Study Data Publisher	University of Dundee								
+Study Data DOI	
+							
+									
+Term Source Name	NCBITaxon	EFO	CMPO	FBbi					
+Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/					
+									
+									
+# EXPERIMENT SECTION									
+# Experiment Section containing all information relative to each experiment in the study including materials used, protocols names and description, phenotype names and description. For multiple experiments this section should be repeated.  Copy and paste the whole section below and fill out for the next experiment									
+									
+Screen Number	1		
+						
+Comment[IDR Screen Name]	idr0097-reicher-proteintag/screenA	
+
+Screen Sample Type	cell
+							
+Screen Description	We use CRISPR-Cas9 based intron tagging to generate cell pools expressing more than 900 GFP-fusion proteins (one GFP-tagged protein per cell). From that pool we isolated and imaged 720 clonal cell lines (one clonal cell line per well, 5 fields of view per well). Additionally, we sequenced the expressed intron-targeting sgRNA in each clone to identify the tagged protein in each clone. For 335 clonal cell lines our sgRNA amplicon sequencing strategy unambiguously identified the integrated sgRNAs indicating a single tagged protein, while in the remaining wells we could not unambiguisly identify the taged protein ('0' values in the respective columns in the library file). We then manually annotated the subcellular the subcellular protein localization of GFP-tagged protein to later compare them to antibody-based annotations available on The Human Protein Atlas.								
+Screen Size	5D Images: 3600	Average Image Dimension (XYZCT):1080x1080x1x1x1	Total Tb: 0.0058					
+Screen Example Images	Plate2_r01c11f01p01-ch1sk1fk1fl1.tiff								
+Screen Imaging Method	spinning disk confocal microscopy							
+Screen Imaging Method Term Source REF	Fbbi								
+Screen Imaging Method Term Accession	FBbi_00000253								
+Screen Technology Type	pooled protein tagging with GFP								
+Screen Technology Type Term Source REF									
+Screen Technology Type Term Accession									
+Screen Type	primary screen		
+				
+Screen Type Term Source REF	EFO		
+							
+Screen Type Term Accession	EFO_0007556
+									
+Screen Comments	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode.  On plate 8, only 48 wells were used and columns 7 to 12 remained empty.							
+									
+# Library section. The library file should be supplied separately and it should contain  the reagents description including, at the absolute minimum: reagent ID, sequences and position in the layout (= plate + position in the plate)
+								
+Library File Name	screenA-library.txt								
+Library File Format	tab-delimited text								
+Library Type	clonal cell lines expressing GFP tagged proteins								
+Library Type Term Source REF	
+								
+Library Type Term Accession	
+								
+Library Manufacturer		
+							
+Library Version			
+						
+Library Experimental Conditions	
+								
+Library Experimental Conditions Term Source REF									
+Library Experimental Conditions Term Accession									
+Quality Control Description	
+								
+									
+# Protocols		
+							
+Protocol Name	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol					
+Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol					
+Protocol Type Term Source REF	EFO	EFO							
+Protocol Type Term Accession	EFO_0003789	EFO_0003969							
+Protocol Description	HAP1 cells were grown in IMDM media with 10% FBS (37¡C, 5% CO2).	no treatment	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode, excitation laser 488 nm, and emission filter 500-550 nm, 700 ms exposure time, raw tiff images.	
+				
+									
+# Phenotypes		
+							
+Phenotype Name	Cytoplasm	Nuclear	Mitochondria	ER	Vesicles	Golgi			
+Phenotype Description	subcellular localization of the GFP-tagged protein	subcellular localization of the GFP-tagged protein	subcellular localization of the GFP-tagged protein	subcellular localization of the GFP-tagged protein	subcellular localization of the GFP-tagged protein	subcellular localization of the GFP-tagged protein		
+	
+Phenotype Score Type	manual	manual	manual	manual	manual	manual	
+		
+Phenotype Term Source REF	CMPO	
+							
+Phenotype Term Name	
+								
+Phenotype Term Accession	
+		 						
+									
+# Raw Data Files	
+								
+Raw Image Data Format	
+								
+Raw Image Organization	8 96-well plates, 5 fields of view per well								
+									
+# Feature Level Data Files (give individual file details unless there is one file per well)									
+Feature Level Data File Name	
+								
+Feature Level Data File Format	
+								
+Feature Level Data File Description	
+								
+Feature Level Data Column Name	
+							
+Feature Level Data Column Description									
+									
+#  Processed Data Files 	
+								
+Processed Data File Name	screenA-processed.txt								
+Processed Data File Format	tab-delimited text								
+Processed Data File Description	The subcellular localization of the tagged protein for those cell lines where sequencing of the intron-targeting sgRNA revealed the identify of the tagged protein. 								
+Processed Data Column Name	Plate	Well	Gene Identifier	Gene Symbol	Has Phenotype	Phenoptye Annotation Level	Phenotype 1	Phenotype 2	Phenotype 3
+Processed Data Column Type	Plate	Well	Gene Identifier	Gene Symbol	phenotype	phenotype	phenotype	phenotype	phenotype
+Processed Data Column Annotation Level	well	well	well	well	well	well			
+Processed Data Column Description	Value is '0' if a a single intron-targeting sgRNA indicating the tagged protein could not be identified for that clone.	Value is '0' if no intron-targeting sgRNA indicating the tagged protein could not be identified for that clone or '2' if the amplicon sequencing of that well revealed in two or more sgRNAs and unambiguous assignment of the tagged protein was not possible.	'yes' if the subcellualr localization could be determined.		Subcellular protein localization (main localization)	Subcellular protein localization (additional localization)	Subcellular protein localization (additional localization)
+Processed Data Column Link To Assay File	Plate_Well combination								
+									
+									
+Experiment Number	2	
+							
+Comment[IDR Experiment Name]	idr0097-reicher-proteintag/experimentB		
+
+Experiment Sample Type	cell
+						
+Experiment Description	We use CRISPR-Cas9 based intron tagging to generate cell pools expressing more than 900 GFP-fusion proteins (one GFP-tagged protein per cell). For this experiment, we seeded the cell pool in a single well of 384-well plate and imaged the entire well twice (0h and 3h timepoint, 289 fields of view per timepoint, raw tiff files were merged to 9 tiles per well). Cells in the same well were then fixed and we performed in situ sequencing to identify the expressed sgRNA in each cell indicating which protein is GFP tagged (7 cycles of in situ sequencing by synthesis, 289 fields of view per cycle,  raw tiff files were merged to 9 tiles per well).								
+Experiment Size	5D Images: 9	Average Image Dimension (XYZCT): 5834x5834x1x4x10 (however, not all channels at all timepoints)	Total Tb: 0.0104	
+					
+Experiment Example Images	3h_green_tile03.tif								
+Experiment Imaging Method	spinning disk confocal microscopy								
+Experiment Imaging Method Term Source REF	Fbbi								
+Experiment Imaging Method Term Accession	FBbi_00000253								
+Experiment Comments	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode.
+							
+									
+# assay files		
+							
+Experiment Assay File	experimentB-assays.txt								
+Experiment Assay File Format	tab-delimited text								
+Assay Experimental Conditions	
+								
+Assay Experimental Conditions Term Source REF								
+Assay Experimental Conditions Term Accession	
+
+Quality Control Description	
+							
+									
+# Protocols									
+Protocol Name	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol					
+Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol					
+Protocol Type Term Source REF	EFO	EFO							
+Protocol Type Term Accession	EFO_0003789	EFO_0003969							
+Protocol Description	HAP1 cells were grown in IMDM media with 10% FBS (37¡C, 5% CO2).	no treatment	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode, live cell imaging 0h and 3h using the 'green' channel: excitation laser 488 nm, and emission filter 500-550 nm, 700 ms exposure time and 7 cycles of in situ sequencing by synthesis on fixed cells using the 'yellow' channel excitation laser: 561 nm, emission filter:570-630, 500 ms; the 'red' channel: excitation laser: 640 nm, emission filter: 650-760 nm, 500 ms and only on the seventh cycle additionally with the 'DAPI' channel. 289 fields of view per well, raw tiff images were merged to result in 9 tiff images per well.						
+									
+# Phenotypes									
+Phenotype Name	sequence								
+Phenotype Description	first seven bases of the intron-targeting sgRNA expressed by a cell identified by in situ sequencing 								
+Phenotype Score Type	automatic								
+Phenotype Term Source REF	CMPO								
+Phenotype Term Name									
+Phenotype Term Accession			 						
+									
+									
+# Feature Level Data Files (give individual file details unless there is one file per well)									
+Feature Level Data File Name	
+								
+Feature Level Data File Format	
+								
+Feature Level Data File Description	
+							
+Feature Level Data Column Name	
+							
+Feature Level Data Column Description									
+									
+#  Processed Data Files 	
+								
+Processed Data File Name	experimentB-processed.txt								
+Processed Data File Format	tab-delimited text								
+Processed Data File Description	The sgRNA sequences as determined by in situ sequencing in the single well that was analyzed. Data analysis (base calling) was done automated using CellProfiler. The tagged protein that corresponds to the respective sgRNA is also in the processed data file. 								
+Processed Data Column Name	Source Name	Sequence	Tagged Protein	Sequence is unique	Location_X	Location_Y			
+Processed Data Column Type	sample id	data	data	data	location	location			
+Processed Data Column Annotation Level	image	image	image	image	image	image			
+Processed Data Column Description	first seven bases of the intron-targeting sgRNA expressed by a cell identified by in situ sequencing 	tagged protein as indicated by the intron-targeting sgRNA	The first seven bases of some intron-targeting sgRNAs are not unique in the library that was used. For those sequences only one hit that mathces the sgRNA sequence is shown.	x coordinates of the respective cell in the image	y coordinates of the respective cell in the image			
+Processed Data Column Link To Assay File	source Name								
+									
+									
+Experiment Number	3		
+						
+Comment[IDR Experiment Name]	idr0097-reicher-proteintag/experimentC	
+
+Experiment Sample Type	cell
+							
+Experiment Description	We use CRISPR-Cas9 based intron tagging to generate cell pools expressing more than 900 GFP-fusion proteins (one GFP-tagged protein per cell). For this experiment, we seeded the cell pool in a single well of 384-well plate and treated the cells with dBET6, a BRD4-targeting PROTAC. We imaged the entire well at three timepoints (before treatment, after 1h and 3h after treatment, 289 fields of view per timepoint). Cells in the same well were then fixed and we performed in situ sequencing to identify the expressed sgRNA in each cell indicating which protein is GFP tagged (8 cycles of in situ sequencing by synthesis, 289 fields of view per cycle).							
+Experiment Size	5D Images: 33	Average Image Dimension (XYZCT): 17720x17720x1x3x2 (however, not all channels at all timepoints)	Total Tb: 0.051	
+					
+Experiment Example Images	
+								
+Experiment Imaging Method	spinning disk confocal microscopy							
+Experiment Imaging Method Term Source REF	Fbbi								
+Experiment Imaging Method Term Accession	FBbi_00000253								
+Experiment Comments	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode.
+							
+									
+# assay files			
+						
+Experiment Assay File	experimentC-assays.txt								
+Experiment Assay File Format	tab-delimited text								
+Assay Experimental Conditions	
+								
+Assay Experimental Conditions Term Source REF									
+Assay Experimental Conditions Term Accession									
+Quality Control Description	
+							
+									
+# Protocols									
+Protocol Name	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol					
+Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol					
+Protocol Type Term Source REF	EFO	EFO							
+Protocol Type Term Accession	EFO_0003789	EFO_0003969							
+Protocol Description	HAP1 cells were grown in IMDM media with 10% FBS (37¡C, 5% CO2).	Cells were treated with 100 nM dBET6.	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode, live cell imaging 0h and 3h using the 'green' channel: excitation laser 488 nm, and emission filter 500-550 nm, 700 ms exposure time and 7 cycles of in situ sequencing by synthesis on fixed cells using the 'yellow' channel excitation laser: 561 nm, emission filter:570-630, 500 ms; the 'red' channel: excitation laser: 640 nm, emission filter: 650-760 nm, 500 ms and only on the seventh cycle additionally with the 'DAPI' channel. 289 fields of view per well, raw tiff images were merged to result in 9 tiff images per well.
+						
+									
+# Phenotypes									
+Phenotype Name									
+Phenotype Description									
+Phenotype Score Type									
+Phenotype Term Source REF	CMPO								
+Phenotype Term Name									
+Phenotype Term Accession			 						
+									
+									
+# Feature Level Data Files (give individual file details unless there is one file per well)									
+Feature Level Data File Name									
+Feature Level Data File Format									
+Feature Level Data File Description								
+Feature Level Data Column Name								
+Feature Level Data Column Description	
+							
+									
+#  Processed Data Files 									
+Processed Data File Name									
+Processed Data File Format									
+Processed Data File Description									
+Processed Data Column Name									
+Processed Data Column Type									
+Processed Data Column Annotation Level									
+Processed Data Column Description									
+Processed Data Column Link To Assay File							
