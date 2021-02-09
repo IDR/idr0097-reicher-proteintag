@@ -119,7 +119,7 @@ Protocol Name	growth protocol	treatment protocol	image acquisition and feature e
 Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol					
 Protocol Type Term Source REF	EFO	EFO							
 Protocol Type Term Accession	EFO_0003789	EFO_0003969							
-Protocol Description	HAP1 cells were grown in IMDM media with 10% FBS (37¡C, 5% CO2).	no treatment	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode, excitation laser 488 nm, and emission filter 500-550 nm, 700 ms exposure time, raw tiff images.	
+Protocol Description	HAP1 cells were grown in IMDM media with 10% FBS (37C, 5% CO2).	no treatment	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode, excitation laser 488 nm, and emission filter 500-550 nm, 700 ms exposure time, raw tiff images.	
 				
 									
 # Phenotypes		
@@ -198,7 +198,7 @@ Protocol Name	growth protocol	treatment protocol	image acquisition and feature e
 Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol					
 Protocol Type Term Source REF	EFO	EFO							
 Protocol Type Term Accession	EFO_0003789	EFO_0003969							
-Protocol Description	HAP1 cells were grown in IMDM media with 10% FBS (37¡C, 5% CO2).	no treatment	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode, live cell imaging 0h and 3h using the 'green' channel: excitation laser 488 nm, and emission filter 500-550 nm, 700 ms exposure time and 7 cycles of in situ sequencing by synthesis on fixed cells using the 'yellow' channel excitation laser: 561 nm, emission filter:570-630, 500 ms; the 'red' channel: excitation laser: 640 nm, emission filter: 650-760 nm, 500 ms and only on the seventh cycle additionally with the 'DAPI' channel. 289 fields of view per well, raw tiff images were merged to result in 9 tiff images per well.						
+Protocol Description	HAP1 cells were grown in IMDM media with 10% FBS (37C, 5% CO2).	no treatment	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode, live cell imaging 0h and 3h using the 'green' channel: excitation laser 488 nm, and emission filter 500-550 nm, 700 ms exposure time and 7 cycles of in situ sequencing by synthesis on fixed cells using the 'yellow' channel excitation laser: 561 nm, emission filter:570-630, 500 ms; the 'red' channel: excitation laser: 640 nm, emission filter: 650-760 nm, 500 ms and only on the seventh cycle additionally with the 'DAPI' channel. 289 fields of view per well, raw tiff images were merged to result in 9 tiff images per well.						
 									
 # Phenotypes									
 Phenotype Name	sequence								
@@ -265,7 +265,7 @@ Protocol Name	growth protocol	treatment protocol	image acquisition and feature e
 Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol					
 Protocol Type Term Source REF	EFO	EFO							
 Protocol Type Term Accession	EFO_0003789	EFO_0003969							
-Protocol Description	HAP1 cells were grown in IMDM media with 10% FBS (37¡C, 5% CO2).	Cells were treated with 100 nM dBET6.	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode, live cell imaging 0h and 3h using the 'green' channel: excitation laser 488 nm, and emission filter 500-550 nm, 700 ms exposure time and 7 cycles of in situ sequencing by synthesis on fixed cells using the 'yellow' channel excitation laser: 561 nm, emission filter:570-630, 500 ms; the 'red' channel: excitation laser: 640 nm, emission filter: 650-760 nm, 500 ms and only on the seventh cycle additionally with the 'DAPI' channel. 289 fields of view per well, raw tiff images were merged to result in 9 tiff images per well.
+Protocol Description	HAP1 cells were grown in IMDM media with 10% FBS (37C, 5% CO2).	Cells were treated with 100 nM dBET6.	Perkin Elmer Opera Phenix High Content Screening System, 63x water-immersion objective, confocal mode, live cell imaging 0h and 3h using the 'green' channel: excitation laser 488 nm, and emission filter 500-550 nm, 700 ms exposure time and 7 cycles of in situ sequencing by synthesis on fixed cells using the 'yellow' channel excitation laser: 561 nm, emission filter:570-630, 500 ms; the 'red' channel: excitation laser: 640 nm, emission filter: 650-760 nm, 500 ms and only on the seventh cycle additionally with the 'DAPI' channel. 289 fields of view per well, raw tiff images were merged to result in 9 tiff images per well.
 						
 									
 # Phenotypes									
